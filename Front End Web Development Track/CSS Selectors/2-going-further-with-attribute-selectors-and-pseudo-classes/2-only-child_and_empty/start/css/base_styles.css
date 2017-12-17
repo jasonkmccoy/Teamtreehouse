@@ -1,0 +1,20 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #616161;
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    width: 50%;
+    margin: auto;
+}
+
+li {
+    border-bottom: 1px dotted #40918c;
+    padding: 15px 10px;
+}

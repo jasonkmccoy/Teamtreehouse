@@ -1,0 +1,15 @@
+1. Native Objects in JavaScript
+    Examples:
+        Number
+        String
+        Array
+        Boolean
+        Object
+
+2. Host Objects in the Browser
+
+    Examples:
+        document
+        console
+        Element
+        

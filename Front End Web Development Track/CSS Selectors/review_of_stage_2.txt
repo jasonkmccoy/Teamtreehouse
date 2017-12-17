@@ -1,0 +1,16 @@
+1. :first-child pseudo-class selector targets the first child of a parent
+
+2. :last-child pseudo-class selector targets the last child of a parent
+
+3. :only-child pseudo-class selector targets elements with no siblings
+
+4. :empty pseudo-class selector targets elements with no children or content
+
+5. Substring matching attribute selectors match specific pieces of an attribute's value
+    a. ^ tells the browser to match a piece of code that's at the beginning of an attribute's value (i.e. "begins with")
+    b. $ matches a piece at the end of an attribute's value (i.e. "ends with")
+    c. * matches any part of an attribute's value (i.e. "contains")
+    
+7. :checked targets the checked state of a radio button or checkbox
+
+8. :disabled targets disabled text fields

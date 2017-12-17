@@ -1,0 +1,55 @@
+/* Attribute Selectors ------------- */
+
+/* Target all elements that have a class
+[class] {
+    color: red;
+}
+*/
+
+/* Target all elements with the class .form-contact
+[class="form-contact"] {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}*/
+
+/*
+    class selector that is qualified with an element type
+    Target any form element with the class .form-contact
+form[class="form-contact"] {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+*/
+
+/*
+    id selector that is qualified with an element type
+    Target any div element with the id #container
+div[id="container"] {
+    max-width: 500px;
+    margin: auto;
+}
+*/
+
+/* most of the time it is just best to use the class and id selectors instead of the examples above */
+.form-contact {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+
+#container {
+    max-width: 500px;
+    margin: auto;
+}
+
+/*
+    Target all input elements with a type value equal to text 
+input[type="text"] {
+    background: #fdfee6;
+}*/
+
+/*    Target all inputs with a type="email" */
+input[type="email"] {
+    background: #fdfee6;
+}
+
+

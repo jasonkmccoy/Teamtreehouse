@@ -1,0 +1,14 @@
+.flexbox-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+}
+
+ul {
+  list-style: none; 
+}
+
+li {
+    border: solid blue 1px;
+}

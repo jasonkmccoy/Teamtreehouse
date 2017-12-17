@@ -1,0 +1,16 @@
+/* Structural Pseudo-classes------------------ */
+
+/* 1. Target and style Item 1 (i.e. the first li of the unordered list) in our list */
+/* Targets the li that is the first child of its parent */
+
+li:first-child {
+    background: #52bab3;
+    color: white;
+}
+
+/* 1. Target and style Item 10 (i.e. the last li of the unordered list) in our list */
+/* Targets the li that is the last child of its parent */
+
+li:last-child {
+    border: none;
+}

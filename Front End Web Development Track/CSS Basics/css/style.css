@@ -1,0 +1,369 @@
+/* Web Fonts ------------------ */
+
+@font-face {
+    font-family: 'Abolition Regular';
+    src: url('../fonts/abolition-regular-webfont.eot');
+    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/abolition-regular-webfont.woff') format('woff'), url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+
+/* Base Styles -------------------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #878787;
+    margin: 0;
+    /*
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+*/
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font: font-weight (optional) font-size/line-height font-family */
+}
+
+h1,
+h2 {
+    font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 5.625rem;
+    /* 5.625em = 90px/16px */
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.3;
+    /* text-shadow values:
+        1) horizontal offset 2) vertical offset 3) blur radius (optional) 4) color value (optional) 
+    */
+    /* Cool 3D text effect:
+        text-shadow: 0 1px 0 #ccc,
+                   0 2px 0 #c9c9c9,
+                   0 3px 0 #bbb,
+                   0 4px 0 #b9b9b9,
+                   0 5px 0 #aaa,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+    */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    margin: 12px 0 0;
+}
+
+h2 {
+    font-size: 3.3125em;
+    /* 53px/16px */
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0 0 .5em;
+    /* 0 0 26px */
+}
+
+h3 {
+    font-size: 1.25em;
+    /* 20px/16px */
+    color: #48525c;
+    line-height: 1.2;
+    margin-bottom: 1.7em;
+    /* 34px/20px */
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+ul,
+ol {
+    margin: 30px 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+/*
+li {
+    display: inline-block;
+    padding: 0 12px;
+    border-right: solid black 1px;
+    margin: 80px 0;
+}
+*/
+
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+    color: rgb(255, 169, 73);
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: rgba(255, 169, 73, 0.4);
+}
+
+a:active {
+    color: lightcoral;
+}
+
+
+/* Main Styles --------------------- */
+
+.main-header {
+    padding-top: 170px;
+    height: 850px;
+    /* Background shorthand order: 
+        1) background-color: #ffa949; 
+        2) background-image: url("../img/mountains.jpg");
+        3) background-repeat: no-repeat;
+        4) background-position: center;
+        5) background-size: cover;
+    */
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffa949), color-stop(90%, transparent)), -webkit-gradient(linear, left bottom, left top, from(#fff), to(transparent)), #ffa949 url("../img/mountains.jpg") no-repeat center;
+    background: linear-gradient(#ffa949, transparent 90%), linear-gradient(0deg, #fff, transparent), #ffa949 url("../img/mountains.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+.title {
+    font-size: 1.625rem;
+    /* 26px/16px */
+    letter-spacing: .065em;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.intro {
+    font-size: 1.25em;
+    /* 20px/16px */
+    line-height: 1.6;
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+    text-align: center;
+}
+
+.primary-content {
+    padding-top: 25px;
+    padding-bottom: 95px;
+}
+
+.secondary-content {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    border-bottom: solid #dfe2e6 2px;
+}
+
+.callout {
+    font-size: 1.25em;
+    border-bottom: 3px solid;
+    padding: 0 9px 3px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid #ffa949;
+}
+
+.t-border {
+    border-top: 2px solid lightgrey;
+}
+
+
+/* Layout Styles ------------------ */
+
+.primary-content,
+.secondary-content {
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    max-width: 960px;
+}
+
+.wildlife {
+    color: white;
+    background: #434a52 url('../img/bear.jpg') no-repeat center;
+    background-size: cover;
+    /* Declare padding individually
+        padding-top: 100px;
+        padding-right: 120px;
+        padding-bottom: 100px;
+        padding-left: 120px;
+    */
+    /*  Declare padding using 1 number
+        padding: 100px;  all sides 
+    */
+    /*  Declare padding using 2 numbers
+        padding: 50px 100px; 1- top/bottom 2-right/left 
+    */
+    /* Declare padding using 3 numbers
+        padding: 10px 20px 30px; 1-top 2-right/left 3-bottom 
+    */
+    /* Declare padding using 4 numbers
+        padding: 10px 20px 30px 40px; 1-top 2-right 3-bottom 4-left    
+    */
+    /*
+    border-width: 10px 20px 30px 40px;
+    border-style: solid dotted dashed solid;
+    border-color: red #ffa949 blue green;
+    */
+    /*
+    border-bottom-style: dashed;
+    border-left-color: green;
+    */
+    padding: 18% 24%;
+    border-top: solid #ffa949 10px;
+    /*  margin property same order rules as padding  */
+    margin: 105px 0 60px;
+    /* box-shadow values:
+        1) inset (optional) also can be at the very end 2) horizontal offset 3) vertical offset 4) blur radius (optional) 5) spread value (optional) 6) color (optional)
+    */
+    -webkit-box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.8);
+    /*
+        border-radius values:
+            1) border-top-left-radius: 50px;
+            2) border-top-right-radius: 10px;
+            3) border-bottom-right-radius: 50px;
+            4) border-bottom-left-radius: 10px;
+    */
+    border-radius: 10px;
+}
+
+.arrow {
+    width: 50px;
+    margin-top: 150px;
+}
+
+
+/* Floated Columns ------------------ */
+
+.resorts,
+.tips {
+    width: 46.5%;
+}
+
+.tips {
+    float: left;
+}
+
+.resorts {
+    float: right;
+}
+
+
+/* Float Clearfix ------------------ */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Media Queries ------------------ */
+
+/*
+@media (max-width: 960px) {
+    body {
+        background: royalblue;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background: darkred;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+    body {
+        background: seagreen;
+    }
+    p {
+        color: white;
+    }
+}
+*/
+
+@media (max-width: 1024px) {
+    .primary-content,
+    .secondary-content {
+        width: 90%;
+    }
+    .wildlife {
+        padding: 10% 12%;
+        margin: 50px 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .primary-content,
+    .secondary-content {
+        width: 100%;
+        padding: 20px;
+        border-top: none;
+    }
+    .main-header {
+        max-height: 380px;
+        padding: 50px 25px 0;
+    }
+    .title {
+        font-size: 1.3rem;
+        border: none;
+    }
+    h1 {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+    .arrow {
+        display: none;
+    }
+    .intro {
+        font-size: 1rem;
+    }
+    .resorts,
+    .tips {
+        float: none;
+        width: 100%;
+    }
+    .main-footer {
+        padding: 20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

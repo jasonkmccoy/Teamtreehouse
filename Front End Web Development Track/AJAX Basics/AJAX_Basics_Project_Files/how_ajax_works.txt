@@ -1,0 +1,128 @@
+How AJAX Works
+
+1. Create a XMLHTTP Request object.
+
+2. Create a callback function.
+
+3. Open a request.
+
+4. Send the request
+
+AJAX Methods (from api.jquery.com)
+
+1. .load()
+
+$('#nav').load('navigation.html);
+
+The code above loads the contents of the navigation.html file into the element
+with an ID of nav
+
+2. $.get()
+
+$.get(url, data, callback);
+**** The data argument is optional ***
+
+Example:
+
+var url = '/employees.php';
+var data = {
+    firstName = "Jason",
+    lastName = "McCoy"
+};
+var callback = function(response) {
+    // do something with the response
+}
+
+$.get(url, data, callback);
+
+3. $.getJSON()
+
+$.getJSON(url, data, callback);
+
+4. $.each()
+utility method for looping through an array of items
+does the same thing as the javascrift for() loop but uses less code
+
+$.each(array_or_object, callback);
+
+$.each(array, function(index, value) {
+
+});
+
+Example:
+
+var fruit = [
+    "apple",
+    "orange",
+    "tangerine",
+    "strawberry",
+    "mango"
+];
+
+$.each( fruit, function(i, item) {
+    alert('Item ' + i + 'is ' item)
+});
+
+5. $.post()
+
+It supports more data and its purpose to send data that is meant to be stored in a database
+
+
+var url = "http://website.com/posts";
+var data = {
+    firstName: "Jason",
+    lastName: "McCoy"
+};
+
+$.post(url, data, callback);
+
+6. $.ajax()
+
+$.ajax(url, settings);
+
+url argument is the same as the methods above
+
+The settings argument is a JavaScript object containing one or
+more key value pairs that set various options of the request
+
+7. .fail()
+
+can be chained to other methods
+
+.fail() takes a single argument that is ran when a request fails
+
+this argument is a jqueryXHR object
+
+Example:
+
+$.get('missing.html', function(data) {
+    $('#myDiv').html(data);
+    }).fail(function(jqXHR) {
+        var errorMessage = "<p>Sorry! There's been an error. ";
+        errorMessage += "Please try again later.</p>";
+        $('#myDiv').html(errorMessage);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

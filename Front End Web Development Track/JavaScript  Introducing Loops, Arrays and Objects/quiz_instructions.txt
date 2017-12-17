@@ -1,0 +1,43 @@
+Design a simple quiz program that will:
+
+1. Ask a series of questions
+2. Keep track of the answers
+3. Know how many the user got right
+
+Looks something like this on the HTML page:
+
+JavaScript Quiz
+
+You got 2 question(s) right.
+
+You got these questions correct:
+
+1. How many states are in the United States?
+2. How many legs does an insect have?
+
+You got these questions wrong:
+
+1. How many continents are there?
+
+
+
+
+How to do it:
+
+
+1. JavaScript Quiz is a H1
+
+2. The 3 questions are prompt variables
+
+3. Have a correct variable that keeps track of correct answers.
+
+4. Have a wrong variable that keeps track of wrong answers.
+
+5. Have an array that loops through all the correct answers and prints to the screen:
+            You got these questions right:
+                1. question
+                2. question
+6. Have an array that loops through all the wrong answers and prints to the screen:
+            You got these questions wrong:
+                1. question
+                2. question

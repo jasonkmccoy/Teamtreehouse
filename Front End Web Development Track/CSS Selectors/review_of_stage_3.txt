@@ -1,0 +1,12 @@
+
+1. :nth-child targets combination of child elements
+
+2. :nth-of-type selects a specific type of element
+
+3. :root targets the top-most element in the document
+
+4. :not selects everything except the type of element we specify
+
+5. pseudo-elements target vitual elements that don't exist in the source code
+
+6. ::before and ::after inserts generated content from our CSS

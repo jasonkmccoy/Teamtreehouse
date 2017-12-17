@@ -1,0 +1,18 @@
+Stage 4 Challenge
+
+1. Replace the button click event with a form submit event
+    
+    $('form').submit( function(evt) {
+    
+    });
+    
+2. Stop the form from submitting
+    $('form').submit( function(evt) {
+        evt.preventDefault();
+    });
+    
+3. Retrieve the value the visitor typed in the input field
+    $('form').submit( function(evt) {
+        evt.preventDefault();
+        var searchTerm = $('search').val();
+    });

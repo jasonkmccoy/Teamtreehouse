@@ -1,0 +1,23 @@
+/* Structural Pseudo-classes------------------ */
+
+li:first-child {
+  background: #52bab3;
+  color: white;
+}
+
+li:last-child {
+  border: none;
+}
+
+/* Target any span element that is the only child of its parent */
+
+span:only-child {
+    color: #52bab3;
+    font-size: 1.5em;
+}
+
+/* Target any li elements that have no content (i.e. empty) */
+
+li:empty {
+    background: tomato;
+}

@@ -1,0 +1,8 @@
+1. Attribute selectors can target an element by any of its HTML attributes
+
+2. DRY: Don't Repeat Yourself
+
+3. We can define specific child and sibling selectors with combinators:
+    a. > targets a direct child of an element
+    b. + targets immediate siblings
+    c. ~ targets all the specified siblings that follow an element

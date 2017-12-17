@@ -1,0 +1,19 @@
+
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-height: 50vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.item {
+    -ms-flex-item-align: center;
+    align-self: center;
+}

@@ -1,0 +1,19 @@
+Challenge
+
+1. Add a second $.getJSON() method
+
+2. The URL for the JSON data is ../data/rooms.json
+
+3. Finished HTML for the rooms widget will look like this:
+
+    <ul class="rooms">
+        <li class="full">101</li>
+        <li class="empty">102</li>
+        <li class="full">103</li>
+        <li class="full">104</li>
+        <li class="empty">105</li>
+        <li class="empty">106</li>
+    </ul>
+    
+4. The complete HTML goes inside a div with the ID of roomList
+        

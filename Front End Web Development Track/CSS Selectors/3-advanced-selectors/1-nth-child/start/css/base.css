@@ -1,0 +1,18 @@
+/* Base Styles ------------------ */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #616161;
+    padding: 40px 0;
+}
+
+ul {
+    list-style: none;
+    width: 50%;
+    margin: auto;
+}
+
+li {
+    border-bottom: 1px dotted;
+    padding: 15px 10px;
+}

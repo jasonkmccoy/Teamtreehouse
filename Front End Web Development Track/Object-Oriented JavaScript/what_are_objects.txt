@@ -1,0 +1,17 @@
+Objects
+
+1. Provide functionality through methods.  
+    Methods may or may not return values.
+    
+2. Provides data storage in properties.
+
+3. The name of the property is a key.
+
+4. The contents of a property is known as a value.
+
+
+Objects are containers for values in the form of properties, 
+and functionality in the form of methods.
+
+There are 1. Native objects from JavaScript the language (for example string, array, boolean),
+2. Host objects that are provided by the web browser or the host environment (for example document, console, Element) and finally there are 3. your own objects used to handle the state of your application.
